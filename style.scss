@@ -1,5 +1,4 @@
 @import "colors";
-@import "media_desktop";
 
 * {
   margin: 0;
@@ -9,63 +8,68 @@
 body {
   background-color: $veryDark;
   color: $heading;
+  font-size: 15px;
 }
-.container {
+
+.maincontainer {
+  max-width: 630px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 600px;
-  flex-flow: column-reverse;
-  margin: 20px;
-  .txtcontent {
-    background-color: $darkDesat;
-    font-family: "Inter", sans-serif;
-    padding: 20px;
-    border-radius: 0px 0px 10px 10px;
+  .container {
     text-align: center;
+    margin: 20px;
+  }
+  .txtcontent {
+    h1, h2, span, p {
+      font-family: "Inter", sans-serif;
+    }
     h1 {
-      margin: 20px;
       font-weight: 700;
+      margin: 15px;
+    }
+    h2 {
+      margin: 5px 0;
     }
     span {
       color: $violet;
     }
     p {
-      color: $paragraph;
-      font-weight: 400;
-    }
-  }
-  .subtitles {
-    font-family: "Lexend Deca", sans-serif;
-    color: $stat;
-    margin: 30px;
-    h2 {
-      color: $heading;
       margin: 10px;
+      color: $paragraph;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
     }
-    p {
-      margin-bottom: 30px;
+    padding: 15px;
+    background-color: $darkDesat;
+    border-radius: 0 0 8px 8px;
+    .subtitles {
+      h2 {
+        letter-spacing: 1px;
+      }
+      p {
+        font-family: "Lexend Deca", sans-serif;
+        color: $stat;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+      margin-top: 40px;
+      list-style: none;
     }
+    font-family: "Lexend Deca", sans-serif;
   }
   .img_bg {
-    padding: 0;
-    margin: 0;
-    background-color: $violet;
-    border-radius: 10px 10px 0px 0px;
+    background: url(images/image-header-mobile.jpg) no-repeat center/cover;
+    border-radius: 8px 8px 0 0;
   }
-  .img_bg .picture .mobile {
-    max-width: 100%;
-    border-radius: 10px 10px 0px 0px;
+  .img_bg .overlay {
+    background-color: hsla(277, 64%, 61%, 0.7);
+    height: 250px;
     mix-blend-mode: multiply;
-    display: block;
-  }
-  .img_bg .picture .desktop {
-    display: none;
   }
 }
-.attribution {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  margin: 5px;
-}
+
+@import "media_desktop";

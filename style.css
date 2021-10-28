@@ -8,86 +8,85 @@
 body {
   background-color: #090b1a;
   color: white;
+  font-size: 15px;
 }
 
-.container {
+.maincontainer {
+  max-width: 630px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 600px;
-  -ms-flex-flow: column-reverse;
-      flex-flow: column-reverse;
-  margin: 20px;
 }
 
-.container .txtcontent {
-  background-color: #1b1938;
-  font-family: "Inter", sans-serif;
-  padding: 20px;
-  border-radius: 0px 0px 10px 10px;
+.maincontainer .container {
   text-align: center;
-}
-
-.container .txtcontent h1 {
   margin: 20px;
-  font-weight: 700;
 }
 
-.container .txtcontent span {
+.maincontainer .txtcontent {
+  padding: 15px;
+  background-color: #1b1938;
+  border-radius: 0 0 8px 8px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.maincontainer .txtcontent h1, .maincontainer .txtcontent h2, .maincontainer .txtcontent span, .maincontainer .txtcontent p {
+  font-family: "Inter", sans-serif;
+}
+
+.maincontainer .txtcontent h1 {
+  font-weight: 700;
+  margin: 15px;
+}
+
+.maincontainer .txtcontent h2 {
+  margin: 5px 0;
+}
+
+.maincontainer .txtcontent span {
   color: #aa5cdb;
 }
 
-.container .txtcontent p {
+.maincontainer .txtcontent p {
+  margin: 10px;
   color: rgba(255, 255, 255, 0.75);
-  font-weight: 400;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
-.container .subtitles {
+.maincontainer .txtcontent .subtitles {
+  margin-top: 40px;
+  list-style: none;
+}
+
+.maincontainer .txtcontent .subtitles h2 {
+  letter-spacing: 1px;
+}
+
+.maincontainer .txtcontent .subtitles p {
   font-family: "Lexend Deca", sans-serif;
   color: rgba(255, 255, 255, 0.6);
-  margin: 30px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
-.container .subtitles h2 {
-  color: white;
-  margin: 10px;
+.maincontainer .img_bg {
+  background: url(images/image-header-mobile.jpg) no-repeat center/cover;
+  border-radius: 8px 8px 0 0;
 }
 
-.container .subtitles p {
-  margin-bottom: 30px;
-}
-
-.container .img_bg {
-  padding: 0;
-  margin: 0;
-  background-color: #aa5cdb;
-  border-radius: 10px 10px 0px 0px;
-}
-
-.container .img_bg .picture .mobile {
-  max-width: 100%;
-  border-radius: 10px 10px 0px 0px;
+.maincontainer .img_bg .overlay {
+  background-color: rgba(170, 92, 219, 0.7);
+  height: 250px;
   mix-blend-mode: multiply;
-  display: block;
-}
-
-.container .img_bg .picture .desktop {
-  display: none;
-}
-
-.attribution {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */
