@@ -1,0 +1,71 @@
+@import "colors";
+@import "media_desktop";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $veryDark;
+  color: $heading;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  flex-flow: column-reverse;
+  margin: 20px;
+  .txtcontent {
+    background-color: $darkDesat;
+    font-family: "Inter", sans-serif;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+    h1 {
+      margin: 20px;
+      font-weight: 700;
+    }
+    span {
+      color: $violet;
+    }
+    p {
+      color: $paragraph;
+      font-weight: 400;
+    }
+  }
+  .subtitles {
+    font-family: "Lexend Deca", sans-serif;
+    color: $stat;
+    margin: 30px;
+    h2 {
+      color: $heading;
+      margin: 10px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  .img_bg {
+    padding: 0;
+    margin: 0;
+    background-color: $violet;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .img_bg .picture .mobile {
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    mix-blend-mode: multiply;
+    display: block;
+  }
+  .img_bg .picture .desktop {
+    display: none;
+  }
+}
+.attribution {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  margin: 5px;
+}
