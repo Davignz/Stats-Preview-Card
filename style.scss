@@ -12,7 +12,7 @@ body {
 }
 
 .maincontainer {
-  max-width: 630px;
+  max-width: 768px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,14 +28,16 @@ body {
       font-weight: 700;
       margin: 15px;
     }
-    h2 {
+    .titles {
+      font-size: 1.5em;
       margin: 5px 0;
+      font-weight: bold;
     }
     span {
       color: $violet;
     }
     p {
-      margin: 10px;
+      margin: 15px;
       color: $paragraph;
       font-weight: 500;
       line-height: 1.5;
@@ -63,6 +65,7 @@ body {
   }
   .img_bg {
     background: url(images/image-header-mobile.jpg) no-repeat center/cover;
+    background-attachment: local;
     border-radius: 8px 8px 0 0;
   }
   .img_bg .overlay {
@@ -71,5 +74,4 @@ body {
     mix-blend-mode: multiply;
   }
 }
-
 @import "media_desktop";
